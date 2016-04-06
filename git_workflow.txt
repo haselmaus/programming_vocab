@@ -1,0 +1,49 @@
+Initialisiert das Git repository                         | olli@wyrm:~/code/programming_vocab$ git init
+                                                         | Initialized empty Git repository in /home/olli/code/programming_vocab/.git/
+Zeigt den Status des repositorys                         | olli@wyrm:~/code/programming_vocab$ git status
+   derzeitiger branch                                    | On branch master
+                                                         | 
+                                                         | Initial commit
+                                                         | 
+                                                         | Untracked files:
+                                                         | 	README.md
+                                                         | 
+                                                         | nothing added to commit but untracked files present
+                                                         | olli@wyrm:~/code/programming_vocab$ git add README.md 
+                                                         | olli@wyrm:~/code/programming_vocab$ git status
+                                                         | On branch master
+                                                         | 
+                                                         | Initial commit
+                                                         | 
+                                                         | Changes to be committed:
+                                                         | 	new file:   README.md
+                                                         | 
+                                                         | olli@wyrm:~/code/programming_vocab$ git commit -m "First vocab version"
+                                                         | [master (root-commit) 2cd7b01] First vocab version
+                                                         |  1 file changed, 37 insertions(+)
+                                                         |  create mode 100644 README.md
+                                                         | olli@wyrm:~/code/programming_vocab$ git status
+                                                         | On branch master
+                                                         | nothing to commit, working directory clean
+                                                         | olli@wyrm:~/code/programming_vocab$ git remote add origin https://ooz@github.com/ooz/programming_vocab.git
+                                                         | olli@wyrm:~/code/programming_vocab$ git push -u origin master
+                                                         | Password for 'https://ooz@github.com': 
+                                                         | Counting objects: 3, done.
+                                                         | Delta compression using up to 4 threads.
+                                                         | Compressing objects: 100% (2/2), done.
+                                                         | Writing objects: 100% (3/3), 495 bytes | 0 bytes/s, done.
+                                                         | Total 3 (delta 0), reused 0 (delta 0)
+                                                         | To https://ooz@github.com/ooz/programming_vocab.git
+                                                         |  * [new branch]      master -> master
+                                                         | Branch master set up to track remote branch master from origin.
+                                                         | olli@wyrm:~/code/programming_vocab$ git pull
+                                                         | remote: Counting objects: 4, done.
+                                                         | remote: Compressing objects: 100% (2/2), done.
+                                                         | remote: Total 4 (delta 1), reused 4 (delta 1), pack-reused 0
+                                                         | Unpacking objects: 100% (4/4), done.
+                                                         | From https://github.com/ooz/programming_vocab
+                                                         |    2cd7b01..22a3182  master     -> origin/master
+                                                         | Updating 2cd7b01..22a3182
+                                                         | Fast-forward
+                                                         |  README.md | 2 +-
+                                                         |  1 file changed, 1 insertion(+), 1 deletion(-)
