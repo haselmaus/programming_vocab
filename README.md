@@ -16,7 +16,7 @@ General Programming Terms
 Object Oriented Terms
 ---------------------
 
-Class
+Class				Was bedeutet das am Autobeispiel?
 Object
 Instance
 
